@@ -1,0 +1,9 @@
+ErrorDocument 404 /404.html
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_HOST} ^quimpi.com [NC]
+RewriteRule (.*) http://www.quimpi.com/$1 [R=301,L,QSA]
+</IfModule>
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://www.quimpi.com/$1 [R=301,L,QSA]
+</IfModule>
