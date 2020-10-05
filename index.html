@@ -20,6 +20,17 @@
   <link href="css/animate.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" />
 
+<!-- SCRIPT CONTROL DE COOKIES -->
+<script type="text/javascript">
+function controlcookies() {
+         // si variable no existe se crea (al clicar en Aceptar)
+    localStorage.controlcookie = (localStorage.controlcookie || 0);
+ 
+    localStorage.controlcookie++; // incrementamos cuenta de la cookie
+    cookie1.style.display='none'; // Esconde la política de cookies
+}
+</script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167492521-1"></script>
   <script>
@@ -34,6 +45,24 @@
 </head>
 
 <body>
+
+  <!--Código HTML de la política de cookies -->
+ 
+<!--La URL incluida es la parte que se ha de modificar -->
+ 
+<div class="cookiesms" id="cookie1">
+Éste sitio web usa cookies, si permanece aquí acepta su uso. Puede leer más sobre el uso de cookies en nuestra <a href="./html/politicaPriv.html">política de privacidad</a>.
+<button onclick="controlcookies()">Aceptar</button>
+<div  class="cookies2" onmouseover="document.getElementById('cookie1').style.bottom = '0px';">Política de cookies + </div>
+</div>
+<script type="text/javascript">
+if (localStorage.controlcookie>0){ 
+document.getElementById('cookie1').style.bottom = '-50px';
+}
+</script>
+ 
+<!-- Fin del código de cookies --->
+
   <header id="header">
     <nav class="navbar navbar-fixed-top" role="banner">
       <div class="container">
