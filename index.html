@@ -3,644 +3,871 @@
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="description" content="Campamento Quimpi, primer campamento starlight del mundo. Para todas las edades."/>
   <meta name="keywords" content="campamento, infantil, niños, niñas, joven, tenerife, quimpi, alojamiento, alquiler, canarias, starlight, lagunetas, esperanza"/>
   <meta name="author" content="Joaquin Ferreira" />
   <title>Quimpi Campamentos Tenerife</title>
-  <link rel="shortcut icon" href="img/logoSinNegro.png"> 
+
+  <!-- Favicons -->
+  <link href="./assets/img/logo-sn-qp.png" rel="icon">
+  <link href="./assets/img/logo-sn-qp.png" rel="apple-touch-icon">
+
   <link rel="canonical" href="https://www.quimpi.com"/>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/overwrite.css">
-  <link href="css/animate.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet" />
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-<!-- SCRIPT CONTROL DE COOKIES -->
-<script type="text/javascript">
-function controlcookies() {
-         // si variable no existe se crea (al clicar en Aceptar)
-    localStorage.controlcookie = (localStorage.controlcookie || 0);
- 
-    localStorage.controlcookie++; // incrementamos cuenta de la cookie
-    cookie1.style.display='none'; // Esconde la política de cookies
-}
-</script>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167492521-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-167492521-1');
+  <!-- SCRIPT CONTROL DE COOKIES -->
+  <script type="text/javascript">
+    function controlcookies() {
+            // si variable no existe se crea (al clicar en Aceptar)
+        localStorage.controlcookie = (localStorage.controlcookie || 0);
+    
+        localStorage.controlcookie++; // incrementamos cuenta de la cookie
+        cookie1.style.display='none'; // Esconde la política de cookies
+    }
   </script>
-
 
 </head>
 
 <body>
 
-  <!--Código HTML de la política de cookies -->
- 
-<!--La URL incluida es la parte que se ha de modificar -->
- 
-<div class="cookiesms" id="cookie1">
-Éste sitio web usa cookies, si permanece aquí acepta su uso. Puede leer más sobre el uso de cookies en nuestra <a href="./html/politicaPriv.html">política de privacidad</a>.
-<button onclick="controlcookies()">Aceptar</button>
-<div  class="cookies2" onmouseover="document.getElementById('cookie1').style.bottom = '0px';">Política de cookies + </div>
-</div>
-<script type="text/javascript">
-if (localStorage.controlcookie>0){ 
-document.getElementById('cookie1').style.bottom = '-50px';
-}
-</script>
- 
-<!-- Fin del código de cookies --->
+  <!-- Cookies -->
+  <div class="cookiesms" id="cookie1">
+    <button onclick="controlcookies()">Aceptar cookies</button><a href="./html/politicaPriv.html"> Política de privacidad</a>.
+    <div  class="cookies2" onmouseover="document.getElementById('cookie1').style.bottom = '0px';">Política de cookies + </div>
+  </div>
+  <script type="text/javascript">
+    if (localStorage.controlcookie>0){ 
+    document.getElementById('cookie1').style.bottom = '-50px';
+    }
+  </script>
 
-  <header id="header">
-    <nav class="navbar navbar-fixed-top" role="banner">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-          <a class="navbar-brand" href="index.html"><img src="img/logoSinNegro.png" class="logo" alt="logo"></a>
-        </div>
-        <div class="collapse navbar-collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#header">Inicio</a></li>
-            <li><a href="#feature">Campamentos</a></li>
-            <li><a href="#colegios">Colegios</a></li>
-            <li><a href="#actividades">Actividades</a></li>
-            <li><a href="#pricing">Alquiler</a></li>
-            <li><a href="#gallery">Donde estamos</a></li>            
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-        </div>
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:quimpicamp@gmail.com">quimpi@quimpi.com</a>
+        <i class="bi bi-phone-fill phone-icon"></i> +34 651 608 117
       </div>
-      <!--/.container-->
-    </nav>
-    <!--/nav-->
-  </header>
-  <!--/header-->
-  
-  <!--comienzo-->
-  <div class="slider">
-    <div id="about-slider">
-      <div id="carousel-slider" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators visible-xs">
-          <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-slider" data-slide-to="1"></li>
-          <li data-target="#carousel-slider" data-slide-to="2"></li>
-          
-        </ol>
-
-        <div class="carousel-inner">
-            
-          <div class="item active">
-            <img src="img/7.jpg" class="img-responsive" alt="PinoCanario">
-            <div class="carousel-caption">
-              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
-                <div><h2><span>¡VERANO 2020!</span></h2></div>
-              </div>
-              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
-                <p><b>Campamentos de dia y de noche</b></p>
-                <p><b>180€/semana (día y noche) y 320€/mes (diurno)</b></p>
-              </div>
-              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">
-                <div class="form-inline">
-                  <div class="form-group">
-                    <a href="html/verano.html"><button type="livedemo" name="Live Demo" class="btn btn-primary btn-lg">Más info</button></a>
-                  </div>
-                  <div class="form-group">
-                    <a href="https://forms.gle/3fZ2oi5kJHkHTJm1A" target="_blank"><button type="getnow" name="Get Now" class="btn btn-primary btn-lg">Reservar</button></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="item">
-            <img src="img/6.jpg" class="img-responsive" alt="BrezoCanario">
-            <div class="carousel-caption">
-              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.0s">
-                <h2><span>ACTIVIDADES</span></h2>
-              </div>
-              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.3s">
-                <p>Tiro con Arco - Senderismo - Esgrima - Equitación</p>
-                <p>Astronomía - Quimpi Park - Gastronomía</p>
-              </div>
-              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.6s">
-                <div class="form-inline">
-                  <div class="form-group">
-                      <a href="#actividades"><button type="livedemo" name="purchase" class="btn btn-primary btn-lg">Más info</button></a>
-                  </div>
-                  <div class="form-group">
-                      
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-           
-          <div class="item">
-            <img src="img/1.jpg" class="img-responsive" alt="Alojamientos">
-            <div class="carousel-caption">
-              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
-                <h2><span>ALOJAMIENTOS</span></h2>
-              </div>
-              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
-                <p>10.000m2 vallados - Rodeados de bosque</p>
-                  <p>4 Casas con chimeneas - 5 refugios - 8 casetas - Todas con literas</p>
-              </div>
-              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">
-                <div class="form-inline">
-                  <div class="form-group">
-                    <a href="html/alojamientos.html"><button type="livedemo" name="purchase" class="btn btn-primary btn-lg" required="required">Más info</button></a>
-                  </div>
-                  <div class="form-group">
-                    <a href="https://forms.gle/VmVXv5i8TiwcdnqQ7"><button type="getnow" name="subscribe" class="btn btn-primary btn-lg">Apúntate</button></a>
-                  </div>
-                </div>
-              </div>
-            </div>        
-          </div>
-          
-          
-          <div id="feature"></div>    
-        </div>
-
-        <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
-					<i class="fa fa-angle-left"></i>
-				</a>
-
-        <a class=" right carousel-control hidden-xs" href="#carousel-slider" data-slide="next">
-					<i class="fa fa-angle-right"></i>
-				</a>
+      <div class="social-links d-none d-md-block">
+        <a href="https://twitter.com/quimpicamp" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/quimpi/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/campamento_quimpi/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/user/campamentoquimpi" target="_blank" class="youtube"><i class="bi bi-youtube"></i></i></a>
       </div>
-      <!--/#carousel-slider-->
     </div>
-    <!--/#about-slider-->
-  </div>
-  <!--/#slider-->
-  
-  <div>
-    <div class="container">
-      <div class="row">
-        <div class="text-center">
-          <br>
-          <br>
-          <h1 class="letraNegra">Campamentos</h1>
-          <p>Contamos con campamentos para cualquier estación del año, elije la que quieras y vive una aventura inolvidable.</p>
-        </div>
-        <div class="col-md-6 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
-          <div class="text-center">
-              <a href="html/verano.html">
-                <div class="hi-icon-wrap hi-icon-effect">
-                  <i class="fa fa-heart-o"></i>
-                  <h2><b>Campamentos de verano</b></h2>
-                  <p>Disfruta de las actividades, estancia, alimentación y muchas cosas más.</p>
-                </div>
-              </a>           
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <a href="index.html" class="logo me-auto"><img src="./assets/img/logo-sn-qp.png" alt="LogoQuimpi" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="#about">Colegios</a></li>
+          <li><a class="nav-link scrollto" href="#services">Campamentos</a></li>
+          <li class="dropdown"><a class="scrollto" href="#estancias"><span>Estancias</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a class="nav-link scrollto" href="./html/alojamientos.html">Alojamientos</a></li>
+              <li><a class="nav-link scrollto" href="./html/cumples.html">Cumpleaños</a></li>
+              <li><a class="nav-link scrollto" href="./html/dia.html">Día en quimpi</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto " href="#portfolio">Galería</a></li>
+          <li><a class="nav-link scrollto" href="#team">Quienes somos</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+          <li><a class="getstarted scrollto" href="#contact">APÚNTATE</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-3.png)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">¡¡A Quimpi con el Cole!!</h2>
+              <p class="animate__animated animate__fadeInUp">Actividades en la Naturaleza que desde 1997 innovamos año tras año. El ALUMNADO podrá conocer en vivo y en directo la fauna y flora de nuestros montes y participará en ACTIVIDADES lúdicas, educativas y de sostenibilidad. Desde una linda mañana hasta una inolvidable semana.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Más Info</a>
+            </div>
           </div>
-        </div>           
-        <div class="col-md-6 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s">
-          <div class="text-center">
-             <a href="html/capamentos_varios.html">   
-                <div class="hi-icon-wrap hi-icon-effect">
-                  <i class="fa fa-users"></i>
-                  <h2><b>Semana santa - Halloween - Carnaval</b></h2>
-                  <p>Vive la semana santa, el halloween y el carnaval de Tenerife en Quimpi</p>                    
-                </div>                 
-             </a>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-1.png)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Campamentos</h2>
+              <p class="animate__animated animate__fadeInUp">Disfruta de actividades, estancia, alimentación, en el primer campamento startligh del mundo, a 1.500 metros de altura, en el Paisaje Protegido de Las Lagunetas entre dos Patrimonios de la Humanidad y muy cerca del Área Metropolitana y del aeropuerto Los Rodeos.</p>
+              <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto">Más Info</a>
+            </div>
           </div>
         </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.png)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Alojamientos</h2>
+              <p class="animate__animated animate__fadeInUp">Disponemos de 15 alojamientos con diferentes opciones. Casas con chimeneas para 8 o 15 personas totamente equipadas, cabañas para 8 personas con literas y refugios donde se pueden alojar de 4 a 6 personas. Además podrán hacer uso de las instalaciones y zonas de ocio.</p>
+              <a href="#estancias" class="btn-get-started animate__animated animate__fadeInUp scrollto">Más Info</a>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div id="colegios"></div> 
-    </div>      
-  </div>
-  
-    
-  <!--/colegios--> 
-    
-  <div class="gallery">
-    <div class="container">
-      <div class="text-center marTop">
-        <br>
-        <br>
-        <h3><b>Colegios</b></h3>
-        <p>Te gustan las aventuras y las actividades, pues has encontrado el lugar perfecto para ello, <br>Quimpi tiene múltiples actividades con las que no te dará tiempo de aburrirte.<b>Descarga nuestro flyer <a href="img/qdia2020.jpg">AQUI.</a></b>  </p>        
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services section-bg">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-bank"></i></div>
+              <h4 class="title"><a class="scrollto" href="#about">Colegios</a></h4>
+              <p class="description">El alumnado y el profesorado disfrutarán de una estancia inolvidable llena de actividades, respirando aire limpio y puro.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-triangle-half"></i></div>
+              <h4 class="title"><a class="scrollto" href="#services">Campamentos</a></h4>
+              <p class="description">Contamos con campamentos para cualquier estación del año. ¡No esperes más! Reserva ya tu plaza y vive una experiencia llena de aventuras.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-house-door"></i></div>
+              <h4 class="title"><a class="scrollto" href="#estancias">Alojamientos</a></h4>
+              <p class="description">Quimpi consta de 10.000m2 vallados rodeados de bosque y cuenta con alojamientos para familias, parejas o amig@s.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-        
-      <div class="pricing-area text-center">
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Colegios</h2>
+          <p>Una gran oportunidad para que el alumnado de los Centros pueda conocer de en vivo y en directo la flora y fauna del pinar de nuestros montes y participar de las Actividades lúdicas, educativas y de sostenibilidad que desarrollamos en el Campamento Quimpi.</p>
+        </div>
+
         <div class="row">
-          <div class="col-sm-4 col-md-4 plan price-four wow fadeInLeft" >
-            <ul>
-              <li class="heading-four">
-                <h2>Día en Quimpi</h2>
-                <span>Solo 12.-€ por niñ@</span>
-              </li>
-              <li>Los alumnos disfrutarán de un día inolvidable lleno de actividades, respirando aire limpio y puro.</li>
-              <li>Entrada a las 10:00h y salida a las 16:00h</li>
-              <li>Podrán practicar multiactividades como Huerto, cocina, granja, talleres de barro, juegos, etc.</li>
-              <li>Deportes como tiro con arco, esgrima, senderismo, Quimpi Park (desde 3º), pony (infantil, 1º y 2º), bádminton, etc.</li>
-              <li>Menú niñ@s: Arroz 3 delicias, nuggets o pollo en salsa, postre, pan y agua.</li>
-              <li>Menú maestros: Ensalada fresca, pollo al horno con papas, postre, pan, cafe y "zumo de uva".</li>
-              <li>Contamos con monitores propios para la realización de las actividades y el material necesario para la realización de los mismos.</li>
-              <li>Seguro de responsalibidad Civil y Accidentes incluido.</li>
-              
-              
-              <li class="plan-action">
-                <a href="https://forms.gle/F5hdjjFh3H9ZhASZA" class="btn btn-primary">¡Reserva ya!</a>
-              </li>                
-            </ul>            
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="assets/img/col-quimpi.jpg" class="img-fluid" alt="fotocol">
           </div>
-            
-          <div class="col-sm-4 col-md-4 plan price-five wow fadeInLeft">
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>Actividades en la Naturaleza que desde 1997 innovamos año tras año.</h3>
+            <p class="fst-italic">
+              Estamos abiertos todo el año tanto en la modalidad de día como en la de dormir.  Pueden venir desde una linda mañana hasta una inolvidable semana.
+            </p>
+            <p>
+              Quimpi está en el Paisaje Protegido de Las Lagunetas, un  lugar mágico, tranquilo, vallado con instalaciones deportivas, varias casas con salones comedores rodeadas de pino canario y cubiertas por un cielo limpio que invita a disfrutar de las estrellas y a soñar despierto.
+            </p>
             <ul>
-              <li class="heading-five">
-                <h2>Campamentos 2-5 días</h2>
-                <span>Desde 25.-€/día</span>
-              </li>
-              <li>De 2 a 5 días dedicados a que los alumnos realicen actividades rodeados de naturaleza.</li>
-              <li>Llegada a las 10:00h y salidas a las 19:00h</li>
-              <li>2 días 80.-€/persona <br>(sin visitas 60.-€/persona)</li>              
-              <li>3 días 145.-€/persona</li>              
-              <li>4 días 190.-€/persona</li>              
-              <li>5 días 230.-€/persona</li>
-              <li>Podemos ocuparnos de transportes entre las islas (añadir tarifa de Escuela Viaja en barco o avión)</li>
-              <li>Transporte en isla, entancia y pensión completa, monitores, actividades, visitas turísticas</li> 
-              <li>Seguro de responsabilidad Civil y Accidentes, Vehiculo de apoyo, helipuerto</li>             
-              <li>Profesor GRATIS por cada 20 niños</li>             
-                           
-              <li class="plan-action">
-                <a href="https://forms.gle/F5hdjjFh3H9ZhASZA" class="btn btn-primary">¡Reserva ya!</a>
-              </li>
-            </ul>             
-          </div>          
-          
-          <div class="col-sm-4 col-md-4 plan price-five wow fadeInLeft">
-            <ul>
-              <a href="img/otono2019.jpg">
-                  <li class="heading-five">
-                    <h2>Mañanas en Quimpi</h2>
-                    <span>Solo 8.-€ por niñ@</span>
-                  </li>
-              </a>              
-              <li>¡¡Este curso sí vamos!!</li>
-              <li>Multiactividades en plena naturaleza.</li>
-              <li><b>Nos adecuamos a las necesidades del Centro y a las posibilidades de l@s alumn@s. </b></li>    
-              <li>Mañanas en Quimpi por solo 8.-€</li>
-              <li>Entrada a las 9:30h salida a las 13:00h</li>       
-              <li>Opcional comida y más tiempo.</li>
-              <li>Campamentos nocturnos: Estancia y alimentación: 25.-€ día y alumn@.</li>
-              <li>Opcional: Transporte, Monitores, Actividades y Salidas.</li> 
-              <li>Podemos ocuparnos de todo.</li>
-              <li>Traer ropa y calzado adecuado para el monte.</li>
-              <li><b>Descarga nuestro flyer <a href="img/qdia2020.jpg">AQUI.</a></b></li>  
-                   
-              <li class="plan-action">
-                <a href="https://forms.gle/F5hdjjFh3H9ZhASZA" class="btn btn-primary">¡Reserva ya!</a>
-                
-              </li>
-            </ul> 
-            <div id="actividades"></div>
+              <li><i class="bi bi-check-circled"></i> Desde que llega el grupo se sigue el protocolo Covid y se hacen pequeñas burbujas de alumnos.</li>
+              <li><i class="bi bi-check-circled"></i> Cada burbuja con su monitor realiza el circuito de multiactividades elegido.</li>
+              <li><i class="bi bi-check-circled"></i> Cada burbuja duerme en su habitación de 2 o 4 literas pero antes no faltan las veladas, los bailes y juegos con linternas.</li>
+            </ul>
           </div>
         </div>
-      </div>           
-    </div>
-  </div>  
-  
-  <!--/Actividades-->  
-  <div class="fondoGris">
-    <div class="container">
-      <div class="row">
-        <div class="text-center">
-          <br>
-          <br>
-          <h3><b>Actividades</b></h3>
-          <p>En el Campamento Quimpi ofrecemos un gran abanico de posibilidades, <br>contamos con unas instalaciones ubicadas en un lugar privilegiado para la realización de cualquier actividad.<br>Siempre intentado adaptarlas a tod@s los usuarios, desde los más pequeños hasta nuestros mayores.</p>
-        </div>
-          <a href="html/cumpleanios.html">
-            <div class="col-md-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
-              <div class="text-center">
-                <div class="hi-icon-wrap hi-icon-effect">
-                  <i class="fa fa-gift "></i>
-                  <h2><b>CUMPLEAÑOS INFANTILES</b></h2>
-                  <p>Celebra tu cumpleaños en Quimpi y vive una experiencia inolvidable. Desde 3 horas hasta de 24 horas.</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="html/celebraciones.html">
-            <div class="col-md-4 wow fadeInRight" data-wow-offset="0" data-wow-delay="0.3s">
-              <div class="text-center">
-                <div class="hi-icon-wrap hi-icon-effect">
-                  <i class="fa fa-cutlery"></i>
-                  <h2><b>CELEBRACIONES</b></h2>
-                  <p>Trae a tu grupo y disfruta de nuestras instalaciones <br> Gran barbacoa, comedores, zonas techadas, salones con chimenea, baños, alojamientos, etc.</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="html/astronomia.html">
-            <div class="col-md-4 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s">
-              <div class="text-center">
-                <div class="hi-icon-wrap hi-icon-effect">
-                  <i class="fa fa-star"></i>
-                  <h2><b>ASTRONOMÍA</b></h2>
-                  <p>Vive una experiencia cósmica dando un paseo por las estrellas del cielo de canarias. Aprende conceptos básicos de Astronomía con un guía Starlight. QUIMPI el primer campamento Starlight del Mundo.</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="html/senderismo.html">
-            <div class="col-md-6 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s">
-              <div class="text-center">
-                <div class="hi-icon-wrap hi-icon-effect">
-                  <i class="fa fa-heart"></i>
-                  <h2><b>SENDERISMO</b></h2>
-                  <p>Quimpi se encuentra en el Paisaje Protegido de Las Lagunetas (rodeados de pinos, fayas y brezos) entre dos Patrimonios de la Humanidad. Un lugar ideal para hacer ejercicio físico y disfrutar de un entorno privilegiado. Hacemos rutas por toda la isla en especial en el parque nacional del Teide. A todos los niveles y para todas las edades. <br> Subidas al Teide con noche en el Refugio, GR 131 y muchas más.</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="html/otrasAct.html">
-            <div class="col-md-6 wow fadeInLeft" data-wow-offset="0" data-wow-delay="0.3s">
-              <div class="text-center">
-                <div class="hi-icon-wrap hi-icon-effect">
-                  <i class="fa fa-camera"></i>
-                  <h2><b>OTRAS ACTIVIDADES</b></h2>
-                  <p>Ofrecemos actividades como Tiro con arco, Esgrima, Senderismo, Equitación, <br> Taller de barro, Cuentacuentos, Teatro , Granja , Huerto y muchas más. <br> QUIMPI PARK, una zona de aventura para que disfruten los pequeños y los no tan pequeños.</p>
-                </div>
-              </div>
-            </div>
-          </a>
+
       </div>
-    </div>
-  </div>
-  <!---->  
-    
-  <div id="pricing">
-    <div class="container">
-      <div class="text-center">
-        <h3><b>Alojamientos</b></h3>
-        <p>Quimpi cuenta con 10.000m2 vallados rodeados de bosque con 2 casas con chimeneas (una para 15 personas y otra para 8), además hay 8 casetas con capacidad para 8 personas cada una y 5 refugios donde se pueden quedar de 4 a 6 personas. Todos los alojamientos cuentan con literas, son camas equipadas con sábanas bajeras, edredón y almohada. <br> También tenemos una cocina industrial, comedor cubierto, zonas de ocio y un Helipuerto (salida vertical en caso de una posible emergencia). <br> Fines de semana y Navidad los precios podrían variar. </p>        
-      </div>      
-      <div class="pricing-area text-center">
-        <div class="row">
-          <div class="col-sm-6 col-md-3 plan price-four wow fadeInLeft" >
-            <ul>
-              <a href="html/alojamientos.html"><li class="heading-four">
-                <h2>Casa Concha</h2>
-                <span>Desde 80.-€/día</span>
-              </li></a>
-              <li>Capacidad 8 Pax</li>
-              <li>2 habitaciones (4 pax)</li>
-              <li>Comedor/Sala de estar</li>
-              <li>Baño propio</li>
-              <li>Chimenea</li>
-              <li class="plan-action">
-                <a href="https://forms.gle/VmVXv5i8TiwcdnqQ7" class="btn btn-primary">¡Reserva ya!</a>
-              </li>                
-            </ul>
-            <a href="html/alojamientos.html">
-                <div class="fotoCentrada">
-                    <img src="img/work/caconcha.jpg" class="imagenReducida" alt="CasaConcha">
-                </div> 
-            </a>
-          </div>            
-          <div class="col-sm-6 col-md-3 plan price-five wow fadeInLeft">
-            <ul>
-              <a href="html/alojamientos.html#casaMonitores"><li class="heading-five">
-                <h2>Casa Monitores</h2>
-                <span>Desde 150.-€/día</span>
-              </li></a>
-              <li>Capacidad 15 Pax</li>
-              <li>3 habitaciones (6-6-3 pax)</li>
-              <li>Comedor/Sala de estar</li>
-              <li>Baño propio</li>
-              <li>Chimenea</li>
-              <li class="plan-action">
-                <a href="https://forms.gle/VmVXv5i8TiwcdnqQ7" class="btn btn-primary">¡Reserva ya!</a>
-              </li>
-            </ul>
-            <a href="html/alojamientos.html#casaMonitores">
-                <div class="fotoCentrada">
-                    <img src="img/work/monitores.jpg" class="imagenReducida" alt="CasaMonitores">
-                </div> 
-            </a> 
-          </div>
+    </section><!-- End About Us Section -->
 
-          <div class="col-sm-6 col-md-3 plan price-seven wow fadeInRight">            
-            <ul>
-              <a href="html/alojamientos.html#refStar"><li class="heading-six">
-                <h2>Refugios Starlight</h2>
-                <span>Desde 40.-€/día/refugio</span>
-              </li></a>
-              <li>Capacidad 24 Pax</li>
-              <li>5 refugios</li>
-              <li>Comedor de Quimpi</li>
-              <li>Baño común</li>
-              <li>Sin calefacción</li>
-              <li class="plan-action">
-                <a href="https://forms.gle/VmVXv5i8TiwcdnqQ7" class="btn btn-primary">¡Reserva ya!</a>
-              </li>
-            </ul>
-            <a href="html/alojamientos.html#refStar">
-                <div class="fotoCentrada">
-                    <img src="img/work/refugios.jpg" class="imagenReducida" alt="RefugiosStarlight">
-                </div> 
-            </a> 
-          </div>
-
-          <div class="col-sm-6 col-md-3 plan price-seven wow fadeInRight">
-            <ul>
-              <a href="html/alojamientos.html#casaIslas"><li class="heading-seven">
-                <h2>Casetas Islas Canarias</h2>
-                 <span>Desde 50.-€/día</span>
-              </li></a>
-              <li>Capacidad 8 Pax</li>
-              <li>4 literas equipadas</li>
-              <li>Comedor de Quimpi</li>
-              <li>Baño común</li>
-              <li>Sin calefacción</li>
-              <li class="plan-action">
-                <a href="https://forms.gle/VmVXv5i8TiwcdnqQ7" class="btn btn-primary">¡Reserva ya!</a>
-              </li>
-            </ul>
-            <a href="html/alojamientos.html#casaIslas">
-                <div class="fotoCentrada">
-                    <img src="img/work/islas.jpg" class="imagenReducida" alt="RefugiosIslas">
-                </div> 
-            </a>
-            <div id="instalaciones"></div>  
-          </div>
-        </div>
-      </div>            
-    </div>    
-    <div class="container">
-      <div class="text-center">
-        <h3><b>Instalaciones</b></h3>
-        <p>Podrás hacer uso de nuestras instalaciones por un precio muy asequible. <br> <b>Barbacoa</b> de más de <b>2 metros</b>, donde podrás asar todo lo que se te ocurra. <br> Gran <b>comedor techado</b> para más de 100 personas con baños. <br> <b>Cocina industrial</b> totalmente equipada, varias <b>salas para celebrar</b> cualquier tipo de reuniones. <br> Nuestra <b>sala Guachinche</b> con barbacoa propia, barra americana, grifo de cerveza (opcional) y baños propios. </p>
-      </div>     
-      <div class="row">
-        <figure class="effect-chico">
-          <div class="col-md-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
-            <a href="img/instalaciones/bbq.jpg" class="flipLightBox">
-						<img src="img/instalaciones/bbq.jpg" class="img-responsive" alt="Barbacoa">
-						</a>
-          </div>
-        </figure>
-        <figure class="effect-chico">
-          <div class="col-md-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
-            <a href="img/instalaciones/comedor.jpg" class="flipLightBox">
-						<img src="img/instalaciones/comedor.jpg" class="img-responsive" alt="Comedor">
-						</a>
-          </div>
-        </figure>
-        <figure class="effect-chico">
-          <div class="col-md-3 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">
-            <a href="img/instalaciones/guachi1.jpg" class="flipLightBox">
-						<img src="img/instalaciones/guachi1.jpg" class="img-responsive" alt="Guachinche">
-						</a>
-          </div>
-        </figure>
-        <figure class="effect-chico">
-          <div class="col-md-3 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">
-            <a href="img/instalaciones/pasilloGuachi.jpg" class="flipLightBox">
-						<img src="img/instalaciones/pasilloGuachi.jpg" class="img-responsive" alt="pasilloGuachi">
-						</a>
-          </div>
-        </figure>
-      </div>     
-    </div>  
-    <div class="tituloCentrado"><a href="html/instalaciones.html" class="btn btn-primary">Galeria</a></div>     
-  </div>
-  <!--/#pricing-->    
-
-  <div id="gallery" class="gallery">
-    <div class="container">
-      <div class="text-center">
-        <h3><b>Dónde estamos</b></h3>
-        <p>El Campamento Quimpi se encuentra en la Ctra. La Laguna - El Teide, <br> (Tf-24) en el Km. 16,300 Paisaje Protegido de Las Lagunetas (Las Lagunetas Altas). <br> Tenemos la oficina en La Esperanza, en la Calle El Calvario Nº19 en el municipio de El Rosario <br> Pincha <a href="https://goo.gl/maps/qiVGNm35e3yh1sSG6">AQUÍ</a> para ver la ubicación</p>        
-      </div>
-      <div class="row">
-        <figure class="effect-chico">
-          <div class="col-md-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
-            <a href="img/work/1.jpg" class="flipLightBox">
-						<img src="img/work/1.jpg" class="img-responsive" alt="PerimetroQuimpi">
-						</a>
-          </div>
-        </figure>
-        <figure class="effect-chico">
-          <div class="col-md-3 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
-            <a href="img/work/2.jpg" class="flipLightBox">
-						<img src="img/work/2.jpg" class="img-responsive" alt="Helipuerto">
-						</a>
-          </div>
-        </figure>
-        <figure class="effect-chico">
-          <div class="col-md-3 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">
-            <a href="img/work/3.jpg" class="flipLightBox">
-						<img src="img/work/3.jpg" class="img-responsive" alt="EntradaQuimpi">
-						</a>
-          </div>
-        </figure>
-        <figure class="effect-chico">
-          <div class="col-md-3 wow fadeInDown" data-wow-offset="0" data-wow-delay="0.3s">
-            <a href="img/work/4.jpg" class="flipLightBox">
-						<img src="img/work/4.jpg" class="img-responsive" alt="VistaAereaQuimpi">
-						</a>
-          </div>
-        </figure>
-      </div>
-      <!--<div class="colocafotos">
-          <div class="row">
-            <figure class="effect-chico">
-              <div class="col-md-12 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
-                <div class="text-center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d292.7590626090333!2d-16.411368519468226!3d28.41491669974558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9daf357d3b5c6943!2sQuimpi!5e0!3m2!1ses!2ses!4v1561584147513!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-              </div>
-            </figure>             
-           </div> 
-        </div>-->
-    </div>   
-    
-  </div>
-  <!--/#gallery-->
-
-  <footer>
-    <div id="contact">
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
       <div class="container">
-        <div class="text-center">
-          <h3><b>Contacto</b></h3>
-          <p>La familia Quimpi (Pilarín, Quim e hijos), ya son más de 2 décadas en los que hemos convertido un campamento en un lugar mágico en el cual ofrecemos en un entorno privilegiado, seguro y entre la ciudad y la base del Teide. Si necesitas más información no dudes en llamarnos o mandarnos un mensaje, te responderemos lo antes posible.</p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.2s">
-            <h2>Contacta a cualquier hora:</h2>
-            <div class="tituloCentrado"><img src="img/team/1.jpg" alt="Pilarin">
-            <p><b>Pilarín</b> <br>Maestra de Primaria especialista en Pedagogía Terapéutica y <br>Licenciada en Arte Dramático en la RESAD</p></div>
-            <div class="tituloCentrado"><img src="img/team/3.jpg" alt="Quim">
-            <p><b>Quim</b><br> MBA-Master Executive en Dirección de Empresas de Turismo y<br> Ocio en E.U. Iriarte. - Guia Starlight </p></div>
-              
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>Opción 01</span>
+            <h4>Día en Quimpi</h4>
+            <p>Multiactividades en la naturaleza. Entrada a las 9:00h y salida a las 13:00h. Opcional almuerzo.</p>
+            <h5>8.-€ por niñ@</h5>
           </div>
 
-          <div class="col-md-6 wow fadeInUp" data-wow-offset="0" data-wow-delay="0.4s">
-            <h2>Información de Contacto</h2>
-            <ul>
-              <li><i class="fa fa-home fa-2x"></i> Oficinas: C/ Calvario, 19 - CP:38290 - LA ESPERANZA - Santa Cruz de Tenerife</li>
-              <hr>
-              <li><i class="fa fa-phone fa-2x"></i>  +34 651 608117 (Pilarín) Aquí también Whatsapp!!<br>
-                  <i class="fa fa-phone fa-2x"></i>  +34 651 608118 (Quim)</li>
-                  <i class="fa fa-phone fa-2x"></i>  +34 922 297238 (Oficinas)<br>   
-              <hr>              
-              <li><i class="fa fa-envelope fa-2x"></i> quimpicamp@gmail.com</li>
-              
-              <li><a href="html/enlaces.html" class="btn btn-primary">Enlaces de interés</a></li>
-            </ul>
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>Opción 02</span>
+            <h4>Estancia de 1-5 dias</h4>
+            <p>Estancia en régimen de pensión completa. Con menús adaptados.</p>
+            <h5>Desde 30.-€ al día</h5>
           </div>
 
+          <div class="col-lg-4 col-md-6 content-item">
+            <span>Opción 03</span>
+            <h4>Opcion 2 + Actividades</h4>
+            <p>Pensión completa + Actividades + Monitores. (Opcional salidas y visitas turísticas)</p>
+            <h5>Desde 45.-€ al día</h5>
+          </div>
           
         </div>
+
       </div>
-    </div>
-    <!--/#contact-->    
-    <div class="social-icon">
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Our Clients Section ======= -->
+    <section id="clients" class="clients">
       <div class="container">
-        <div class="col-md-6 col-md-offset-3">
-          <ul class="social-network">
-            <li><a href="https://www.facebook.com/quimpi/" target="_blank" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/quimpicamp" target="_blank" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>          
-            <li><a href="https://www.youtube.com/user/campamentoquimpi" target="_blank" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube"></i></a></li>
-            <li><a href="https://www.instagram.com/campamento_quimpi/" target="_blank" class="dribbble tool-tip" title="Instagram"><i class="fa fa-instagram"></i></a></li>       
-          </ul>
+
+        <div class="section-title">
+          <h2>Actividades</h2>
+          <p>En el Campamento Quimpi ofrecemos un gran abanico de posibilidades, contamos con unas instalaciones ubicadas en un lugar privilegiado para la realización de cualquier actividad. Siempre intentado adaptarlas a tod@s los usuarios, desde los más pequeños hasta nuestros mayores.</p>
         </div>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/actividades-slide/caballo.png" class="img-fluid" alt="caballo"></div>
+            <div class="swiper-slide"><img src="assets/img/actividades-slide/escalada.png" class="img-fluid" alt="escalada"></div>
+            <div class="swiper-slide"><img src="assets/img/actividades-slide/teatro.png" class="img-fluid" alt="teatro"></div>
+            <div class="swiper-slide"><img src="assets/img/actividades-slide/arco.png" class="img-fluid" alt="arco"></div>
+            <div class="swiper-slide"><img src="assets/img/actividades-slide/telescopio.png" class="img-fluid" alt="telescopio"></div>
+            <div class="swiper-slide"><img src="assets/img/actividades-slide/barro.png" class="img-fluid" alt="barro"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Our Clients Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Campamentos</h2>
+          <p>Disfruta de las actividades, estancia, alimentación, en el primer campamento startligh del mundo <a href="https://www.fundacionstarlight.org/" target="_blank">(Fundación Starlight)</a>, a 1.500 metros de altura, en el Paisaje Protegido de Las Lagunetas (rodeados de pinos, fayas y brezos) entre dos Patrimonios de la Humanidad (El Parque Nacional del Teide y San Cristóbal de La Laguna) y muy cerca del Área Metropolitana y del aeropuerto Los Rodeos (a 8 Km. del pueblo de La Esperanza).</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <a href="./html/verano.html" style="color: black;">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                  </svg>
+                  <i class="bi bi-sun"></i>
+                </div>
+                <h4>De verano</h4>
+                <p>Disfruta de multiactividades, estancia, alimentación y muchas cosas más</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-yellow">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                </svg>
+                <i class="bi bi-calendar3"></i>
+              </div>
+              <h4>Puentes y vacaciones</h4>
+              <p>Vive la Semana Santa, Halloween, el Carnaval de Tenerife y otros festivos en Quimpi. Contacta con nosotros y te informaremos</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Llámanos y te informaremos de todo</h3>
+            <p> Si necesitas más información no dudes en contactar con nosotros. Puedes hacerlo a través de correo electrónico, por redes sociales o directamente por Whatsapp.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle scrollto" href="#contact">Contacto</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Services Section 2 ======= -->
+    <section id="estancias" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Estancias en Quimpi</h2>
+          <p>Disfruta de una estancia inolvidable en el Paisaje Protegido de Las Lagunetas, entre dos Patrimonios de la Humanidad.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <a href="./html/alojamientos.html" title="More Details" style="color: black;">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                  </svg>
+                  <i class="bi bi-house-fill"></i>
+                </div>
+                <h4>Alojamientos</h4>
+                <p>Disponemos de 15 alojamientos con diferentes opciones. Casas con chimeneas para 8 o 15 personas totamente equipadas, cabañas para 8 con literas y refugios donde se pueden alojar de 4 a 6. Además podrán hacer uso de las instalaciones y zonas de ocio.</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <a href="./html/cumples.html" style="color: black;">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                  </svg>
+                  <i class="bi bi-gift-fill"></i>
+                </div>
+                <h4>Cumpleaños</h4>
+                <p>Celebra tu cumpleaños con nosotros y vive una experiencia llena de actividades. Disponemos de zonas al aire libre, zonas techadas y en el interior. Desde 3 horas hasta de 24 horas.</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <a href="./html/dia.html" style="color: black;">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                  </svg>
+                  <i class="bi bi-stars"></i>
+                </div>
+                <h4>Tu fiesta en Quimpi</h4>
+                <p>Ven a una de nuestras jornadas especiales! Rutas de Setas, Calçotadas o simplemente ven y usa nuestras instalaciones para disfrutar de un dia en la naturaleza.</p>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Starlite & biosphere Section ======= -->
+    <section class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>COMPROMETIDOS Y CERTIFICADOS</h2>
+          <p>Somos el primer campamento startligh del mundo y estamos comprometidos a vivir un Estilo de Vida Sostenible, <br> ayudando a conseguir los 17 Objetivos de Desarrollo Sostenible de la Agenda 2030 de Naciones Unidas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="cert-box iconbox-yellow">
+              <h4>Primer Campamento Starlight</h4>
+              <a href="https://fundacionstarlight.org/" target="_blank">
+                <img src="./assets/img/starlight.jpg" alt="starlight" style="width: 75%;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-2" data-aos="zoom-in" data-aos-delay="200">
+            <div class="cert-box iconbox-yellow">
+              <h4>Estilo de Vida Sostenible</h4>
+              <a href="https://www.biospheresustainable.com/es/comunidad/quimpi-campamentos/1662" target="_blank">
+                <img src="./assets/img/tarjetaBIO.png" alt="biosphere" style="width: 75%;">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End starlite & biosphere Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Galería</h2>
+          <p>Podríamos explicar todo lo que hacemos, pero creemos que una imagen vale más que mil palabras.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Todas</li>
+              <li data-filter=".filter-alojamientos">Alojamientos</li>
+              <li data-filter=".filter-actividades">Actividades</li>
+              <li data-filter=".filter-gastronomia">Gastronomía</li>
+              <li data-filter=".filter-instalaciones">Instalaciones</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-alojamientos">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/alojamientos/al-house1.jpg" class="img-fluid" alt="CasaMonitores">
+              <div class="portfolio-info">
+                <h4>Casa 1</h4>
+                <p>15 pax</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/alojamientos/al-house1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Casa 1 con chimenea"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-actividades">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/actividades/as-q1.jpg" class="img-fluid" alt="Astronomía">
+              <div class="portfolio-info">
+                <h4>Astronomía en Quimpi</h4>
+                <p>Con Guía Starlight</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/actividades/as-q1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Astronomía en Quimpi con guía Starlight"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-gastronomia">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/gastronomia/ga-calcot.jpg" class="img-fluid" alt="calçot">
+              <div class="portfolio-info">
+                <h4>Calçotada</h4>
+                <p>Gastronomía Quimpi</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/gastronomia/ga-calcot.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Calçotada en Quimpi"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-instalaciones">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/instalaciones/comedor.jpg" class="img-fluid" alt="comedor">
+              <div class="portfolio-info">
+                <h4>Comedor</h4>
+                <p>Instalaciones de Quimpi</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/instalaciones/comedor.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Comedor con barbacoa para eventos y actividades"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-alojamientos">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/alojamientos/al-house2.jpg" class="img-fluid" alt="CasaConcha">
+              <div class="portfolio-info">
+                <h4>Casa 2</h4>
+                <p>8 pax</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/alojamientos/al-house2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Casa 2 con chimenea"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-actividades">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/actividades/barro.jpg" class="img-fluid" alt="Barro">
+              <div class="portfolio-info">
+                <h4>Barro</h4>
+                <p>Actividades en Quimpi</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/actividades/barro.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Manipulación y creación de figuras de barro"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-gastronomia">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/gastronomia/ga-setas.jpg" class="img-fluid" alt="setas">
+              <div class="portfolio-info">
+                <h4>Setas y hongos</h4>
+                <p>Gastronomía Quimpi</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/gastronomia/ga-setas.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Busqueda de setas en los alrededores de Quimpi"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-instalaciones">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/instalaciones/guachinche.jpg" class="img-fluid" alt="guachinche">
+              <div class="portfolio-info">
+                <h4>Guachinche</h4>
+                <p>Instalaciones de Quimpi</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/instalaciones/guachinche.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Sala Guachinche con baño para eventos y actividades"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-alojamientos">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/alojamientos/al-cabins.jpg" class="img-fluid" alt="Cabañas">
+              <div class="portfolio-info">
+                <h4>Cabañas</h4>
+                <p>8 pax</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/alojamientos/al-cabins.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Cabañas con 4 literas"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-actividades">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/actividades/equitacion.jpg" class="img-fluid" alt="Equitación">
+              <div class="portfolio-info">
+                <h4>Equitación</h4>
+                <p>Actividades en Quimpi</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/actividades/equitacion.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Paseo a caballo o pony con nuestros monitores"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-gastronomia">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/gastronomia/ga-alcachofada.jpg" class="img-fluid" alt="Alcachofas">
+              <div class="portfolio-info">
+                <h4>Alcachofada</h4>
+                <p>Gastronomía Quimpi</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/gastronomia/ga-alcachofada.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Alcachofada en Quimpi"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-instalaciones">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/instalaciones/bbq.jpg" class="img-fluid" alt="barbacoa">
+              <div class="portfolio-info">
+                <h4>Barbacoa</h4>
+                <p>Instalaciones de Quimpi</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/instalaciones/bbq.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Nuestra barbacoa para asar todo lo que quieras"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-alojamientos">
+
+          
+
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/alojamientos/al-ref.jpg" class="img-fluid" alt="Refugios">
+              <div class="portfolio-info">
+                <h4>Refugios</h4>
+                <p>4-6 pax</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/alojamientos/al-ref.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Refugios con literas"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-actividades">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/actividades/t-arco.jpg" class="img-fluid" alt="Tiro con arco">
+              <div class="portfolio-info">
+                <h4>Tiro con arco</h4>
+                <p>Actividades en Quimmpi</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/actividades/t-arco.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Aprende a tirar con arco con nosotros"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-actividades">
+
+          
+
+          
+
+         
+
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/actividades/q-park1.jpg" class="img-fluid" alt="Quimpi Park">
+              <div class="portfolio-info">
+                <h4>Quimpi Park</h4>
+                <p>Actividades en Quimpi</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/actividades/q-park1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Divertido parque de juegos para los mas pequeños"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-gastronomia">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/gastronomia/ga-caracolada.jpg" class="img-fluid" alt="Caracolada">
+              <div class="portfolio-info">
+                <h4>Caracolada</h4>
+                <p>Gastronomía Quimpi</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/gastronomia/ga-caracolada.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Caracolada en Quimpi"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-instalaciones">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/instalaciones/pasillo.jpg" class="img-fluid" alt="pasillo">
+              <div class="portfolio-info">
+                <h4>Zona de eventos</h4>
+                <p>Instalaciones de Quimpi</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/instalaciones/pasillo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Zona semicubierta para eventos, celebraciones y actividades"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-actividades">
+
+
+
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/actividades/senderismo.jpg" class="img-fluid" alt="Senderismo">
+              <div class="portfolio-info">
+                <h4>Senderismo</h4>
+                <p>Con Guía del Parque Nacional</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/actividades/senderismo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Rutas de senderismo por toda la Isla"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-gastronomia">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/gastronomia/ga-paellas.jpg" class="img-fluid" alt="Paella">
+              <div class="portfolio-info">
+                <h4>Paella</h4>
+                <p>Gastronomía Quimpi</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/gastronomia/ga-paellas.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Paellas en Quimpi"><i class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Quienes somos</h2>
+          <p>La familia Quimpi (Pilarín, Quim e hijos), ya son más de 2 décadas en los que hemos convertido un campamento en un lugar mágico en el cual ofrecemos en un entorno privilegiado, seguro y entre la ciudad y la base del Teide.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-pilarin.jpg" alt="PilarinTeam">
+              <h4>Pilarín</h4>
+              <span>Co-founder</span>
+              <p>
+                Maestra de Primaria especialista en Pedagogía Terapéutica y Licenciada en Arte Dramático en la RESAD
+              </p>
+              <div class="social">
+                <a href="https://twitter.com/quimpicamp"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/pilarin.serranoperez"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/pilarinserranoperez/"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-quim.jpg" alt="QuimTeam">
+              <h4>Quim</h4>
+              <span>Co-founder</span>
+              <p>
+                MBA-Master Executive en Dirección de Empresas de Turismo y Ocio en E.U. Iriarte. - Guia Starlight
+              </p>
+              <div class="social">
+                <a href="https://twitter.com/quim_ferreira"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/quim.ferreiracastells"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/campamento_quimpi/"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contacto</h2>
+          <p>Si necesitas más información no dudes en llamarnos, mandarnos un Whatsapp o un correo, te responderemos lo antes posible.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Localización:</h4>
+                <p>Ctra. La Laguna - El Teide (Tf-24) Km. 16.330 - Las Lagunetas</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>quimpicamp@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Teléfono:</h4>
+                <p>Pilarín: +34 651 608 117 <br> Quim: +34 651 608 118 </p>
+              </div>
+            </div>
+            <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Nombre</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="subject">Concepto</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="message">Mensaje</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Cargando</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Tu mensaje ha sido enviado, te responderemos lo antes posible.</div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+            </form> -->
+          </div>
+          
+          <div class="col-lg-6 d-flex align-items-stretch">
+            <div class="info">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28073.153972214004!2d-16.428551673889174!3d28.414904032401854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41d28c4ff085b1%3A0x9daf357d3b5c6943!2sQuimpi!5e0!3m2!1ses!2ses!4v1633820012900!5m2!1ses!2ses" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <img src="./assets/img/logo-sn-qp.png" alt="LogoQuimpi" class="img-fluid" style="width: 15%;">
+      <p>Si puedes soñarlo, puedes hacerlo.</p>
+      <div class="social-links">
+        <a href="https://twitter.com/quimpicamp" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/quimpi" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/campamento_quimpi" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.youtube.com/user/campamentoquimpi" target="_blank" class="youtube"><i class="bx bxl-youtube"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Quimpi.com</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://www.linkedin.com/in/joaquinferreirag/" target="_blank">JoaquinFG</a>
       </div>
     </div>
-  </footer>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery-2.1.1.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/parallax.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="js/fliplightbox.min.js"></script>
-  <script src="js/functions.js"></script>
-  <script src="contactform/contactform.js"></script>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
