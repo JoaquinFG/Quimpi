@@ -262,4 +262,24 @@
     }
   });
 
+  /* 
+  slide img fotocol
+  */
+  let images = [
+    'assets/img/2023-2.jpeg',
+    'assets/img/2023-1.jpeg' 
+  ];
+
+  let currentIndex = 0;
+
+  function changeImage() {
+      currentIndex++;
+      if (currentIndex >= images.length) {
+          currentIndex = 0;
+      }
+      document.getElementById('rotatingImage').src = images[currentIndex];
+  }
+
+  setInterval(changeImage, 5000);
+
 })()
