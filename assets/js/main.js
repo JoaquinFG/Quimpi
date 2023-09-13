@@ -282,4 +282,11 @@
 
   setInterval(changeImage, 5000);
 
+  function openImageInNewWindow() {
+    let imageUrl = document.getElementById('rotatingImage').src;
+    window.open(imageUrl, '_blank');
+  }
+
+  document.getElementById('rotatingImage').addEventListener('click', openImageInNewWindow);
+
 })()
