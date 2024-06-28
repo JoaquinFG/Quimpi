@@ -828,6 +828,7 @@ section {
   border: 2px solid #fff;
   color: #5cb874;
   border-radius: 4px;
+  width: 100%;
 }
 .cta-summer .cta-summer-btn:hover {
   background: #fff;
