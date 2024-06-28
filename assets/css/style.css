@@ -824,7 +824,7 @@ section {
   padding: 10px 30px;
   border-radius: 2px;
   transition: 0.5s;
-  margin: 10px;
+  margin: 10px auto;
   border: 2px solid #fff;
   color: #5cb874;
   border-radius: 4px;
@@ -845,6 +845,30 @@ section {
     align-items: center;
     justify-content: center;
   }
+}
+
+.dropdown-app-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+.dropdown-app-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-app-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-app:hover .dropdown-app-content {
+  display: block;
 }
 
 /*--------------------------------------------------------------
