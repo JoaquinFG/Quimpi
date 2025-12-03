@@ -434,6 +434,36 @@ h1, h2, h3, h4, h5, h6 {
 #hero .btn-get-started:hover {
   background: #6ec083;
 }
+/* Christmas Slide Styling */
+#hero .christmas-slide::before {
+  background-color: rgba(139, 0, 0, 0.377) !important;
+  background: linear-gradient(135deg, rgba(139, 0, 0, 0.456) 0%, rgba(255, 177, 121, 0.333) 100%);
+}
+#hero .christmas-slide h2 {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(255, 215, 0, 0.5);
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+#hero .christmas-slide p {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  font-weight: 500;
+}
+#hero .christmas-slide .btn-get-started {
+  background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%);
+  border: 2px solid #ffd700;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4), 0 0 20px rgba(196, 30, 58, 0.3);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#hero .christmas-slide .btn-get-started:hover {
+  background: linear-gradient(135deg, #dc143c 0%, #a52a2a 100%);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6), 0 0 30px rgba(196, 30, 58, 0.5);
+  transform: translateY(-2px);
+}
 @media (max-width: 992px) {
   #hero {
     height: 100vh;

@@ -137,6 +137,10 @@
    * Scrool with ofset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
+    // Don't prevent default for portfolio-lightbox links (they handle their own clicks)
+    if (this.classList.contains('portfolio-lightbox')) {
+      return
+    }
     if (select(this.hash)) {
       e.preventDefault()
 
